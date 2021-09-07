@@ -58,7 +58,7 @@ func main() {
 	// constants and iotas
 	fmt.Println(first, second, third, fourth)
 
-	// arrays
+	// arrays - all items in a given array must be of the same data type!
 	var arr [3]int
 	arr[0] = 0
 	fmt.Println(arr)
@@ -79,4 +79,14 @@ func main() {
 	s3 := slice1[:2]
 	s4 := slice1[1:2]
 	fmt.Println(s2, s3, s4)
+
+	// maps
+	m := map[string]int{"foo": 42} // string data type into an int .... [key]value
+	fmt.Println(m)
+	fmt.Println(m["foo"])
+	m["bar"] = 69 // maps are not readonly
+	m["lol"] = 100
+	fmt.Println(m)
+	delete(m, "foo") // deleting a map
+	fmt.Println(m)
 }
