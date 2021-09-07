@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 
+	"github.com/pluralsight/webservice/models"
 	"rsc.io/quote"
 )
 
@@ -108,4 +109,12 @@ func main() {
 		LastName:  "damn",
 	}
 	fmt.Println(u2)
+
+	// from models pkg
+	u3 := models.User{
+		ID:        2,
+		FirstName: "slim",
+		LastName:  "jims",
+	}
+	fmt.Println(u3)
 }
