@@ -74,4 +74,9 @@ func main() {
 	fmt.Println(slice1)
 	slice1 = append(slice1, 420, 69)
 	fmt.Println(slice1)
+
+	s2 := slice1[1:]
+	s3 := slice1[:2]
+	s4 := slice1[1:2]
+	fmt.Println(s2, s3, s4)
 }
