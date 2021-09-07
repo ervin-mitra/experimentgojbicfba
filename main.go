@@ -6,6 +6,18 @@ import (
 	"rsc.io/quote"
 )
 
+// IOTA - represents successive integer constants. It resets to 0 whenever the word
+// const appears in the source code, and increments after each const specification
+const (
+	first = iota + 6
+	second
+)
+
+const (
+	third = iota
+	fourth
+)
+
 func main() {
 
 	fmt.Println(quote.Go())
@@ -43,6 +55,7 @@ func main() {
 	midName = "topson"
 	fmt.Println(*ptr, ptr)
 
-	// constants
+	// constants and iotas
+	fmt.Println(first, second, third, fourth)
 
 }
