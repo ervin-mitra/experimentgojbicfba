@@ -32,7 +32,8 @@ func main() {
 	// pointer data types
 	var firstName *string = new(string)
 	*firstName = "pointers"
-	fmt.Println(*firstName)
+	fmt.Println("Address: ", firstName)
+	fmt.Println("Value Stored: ", *firstName)
 
 	midName := "mid"
 
