@@ -89,4 +89,23 @@ func main() {
 	fmt.Println(m)
 	delete(m, "foo") // deleting a map
 	fmt.Println(m)
+
+	// structs
+	type user struct {
+		ID        int
+		FirstName string
+		LastName  string
+	}
+	var u user
+	u.ID = 420
+	u.FirstName = "Snoop"
+	u.LastName = "DOGG"
+	fmt.Println(u)
+
+	u2 := user{
+		ID:        1,
+		FirstName: "bruh",
+		LastName:  "damn",
+	}
+	fmt.Println(u2)
 }
