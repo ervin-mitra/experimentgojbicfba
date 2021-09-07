@@ -58,4 +58,20 @@ func main() {
 	// constants and iotas
 	fmt.Println(first, second, third, fourth)
 
+	// arrays
+	var arr [3]int
+	arr[0] = 0
+	fmt.Println(arr)
+
+	arr2 := [3]int{1, 2, 4}
+	fmt.Println(arr2)
+
+	// slices - dynamically sized arrays
+	slice := arr2[:] // it is pointing into that underlying array
+	fmt.Println(slice)
+
+	slice1 := []int{1, 6, 9} // no need to specify size with slices
+	fmt.Println(slice1)
+	slice1 = append(slice1, 420, 69)
+	fmt.Println(slice1)
 }
